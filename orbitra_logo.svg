@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background Circle -->
+  <defs>
+    <linearGradient id="orbitraGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orbitraGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0284c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0369a1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Circle Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#orbitraGradient)" opacity="0.1" stroke="url(#orbitraGradient)" stroke-width="2"/>
+
+  <!-- Main Circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#orbitraGradient)" stroke="url(#orbitraGradient2)" stroke-width="3"/>
+
+  <!-- Inner Dark Circle -->
+  <circle cx="100" cy="100" r="80" fill="#0f172a" stroke="url(#orbitraGradient)" stroke-width="2"/>
+
+  <!-- Orbits -->
+  <circle cx="100" cy="100" r="50" fill="none" stroke="url(#orbitraGradient)" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="100" cy="100" r="35" fill="none" stroke="url(#orbitraGradient)" stroke-width="1" opacity="0.3"/>
+
+  <!-- Central Omega Symbol -->
+  <g transform="translate(100, 100)">
+    <!-- Omega Character -->
+    <text x="0" y="25" font-size="70" font-weight="bold" font-family="Arial, sans-serif" fill="url(#orbitraGradient)" text-anchor="middle" letter-spacing="2">
+      Ω
+    </text>
+  </g>
+
+  <!-- Accent Dots (representing planets/nodes) -->
+  <!-- Top Right -->
+  <circle cx="140" cy="60" r="4" fill="url(#orbitraGradient)" opacity="0.8"/>
+  <!-- Bottom Right -->
+  <circle cx="145" cy="135" r="3" fill="url(#orbitraGradient)" opacity="0.7"/>
+  <!-- Bottom Left -->
+  <circle cx="55" cy="140" r="3.5" fill="url(#orbitraGradient)" opacity="0.75"/>
+  <!-- Top Left -->
+  <circle cx="60" cy="65" r="4" fill="url(#orbitraGradient)" opacity="0.8"/>
+
+  <!-- Shimmer Effect -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="url(#orbitraGradient)" stroke-width="1" opacity="0.2" stroke-dasharray="5,5"/>
+</svg>
